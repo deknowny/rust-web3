@@ -125,7 +125,7 @@ impl From<TransactionParameters> for CallRequest {
 }
 
 /// Data for offline signed transaction
-#[derive(Clone, Debug, PartialEq)]
+#[derive(Clone, Debug, PartialEq, Deserialize, Serialize)]
 pub struct SignedTransaction {
     /// The given message hash
     pub message_hash: H256,
